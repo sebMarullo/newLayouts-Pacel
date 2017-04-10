@@ -32,11 +32,27 @@
                 font-weight: bold
             }
         </style>
-        <title>Archive Order Page Template</title>
+        <!-- Used for the print options, do not remove. -->
+        <style media="screen" type="text/css">
+            .screenonly {
+                display: block
+            }
+        </style>
+        <style media="print" type="text/css">
+            .screenonly {
+                display: none
+            }
+        </style>
+        <!-- End used for the print options. --><title>Archive Order Page Template</title>
     </head>
     <body>
         <div id="myshp_orders">
             <div id="myshp_orders_confirmation_history">
+                <div class="myshp_order_controls screenonly">
+                    <input class="myshp_order_controls_button print" type="button" style="width:100" value="Afdrukken" onclick="window.print();return false;"/><input class="myshp_order_controls_button close" type="button" style="width:100" value="Sluiten" onclick="parent.doClose(true);"/>
+                </div>
+                <div class="clear">
+                </div>
                 <div class="myshp_confirmation_history_header" style="myshop-resource:title.confirmation">
                     Bestelbevestiging
                 </div>
@@ -99,19 +115,19 @@
                                                     </span>
                                                 </div>
                                             </div>
-                                            <div style="myshop-has-plugin:mypacel">
-                                                <p style="myshop-has:mypacel">
-                                                    <span style="myshop-value:shipping-myparcel-description" class="myshp_checkout_customerdata_field">
-                                                        extra text
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <p style="myshop-has:shipping-delivery-date">
-                                                <span style="myshop-value:shipping-delivery-description" class="myshp_checkout_customerdata_field">
+                                        </div>                             
+                                        <div style="myshop-has-plugin:mypacel">
+                                            <p style="myshop-has:mypacel">
+                                                <span style="myshop-value:shipping-myparcel-description" class="myshp_checkout_customerdata_field">
                                                     extra text
                                                 </span>
                                             </p>
                                         </div>
+                                        <p style="myshop-has:shipping-delivery-date">
+                                            <span style="myshop-value:shipping-delivery-description" class="myshp_checkout_customerdata_field">
+                                                extra text
+                                            </span>
+                                        </p>
                                     </td>
                                     <td class="myshp_checkout_customerdata_hspacer">
                                     </td>
@@ -160,19 +176,13 @@
                                         <h3><span style="myshop-resource:shippingmethod.capital">Leverwijze</span></h3>
                                         <div class="myshp_checkout_customerdata_row">
                                             <!--<label class="myshp_checkout_customerdata_label"><span style="myshop-value:label">&nbsp;</span></label>--><span class="myshp_checkout_customerdata_field"><span style="myshop-value:shipping">&nbsp;</span></span>
+                                            <span style="myshop-has:myshop-has-value-plugin-postnl_checkout:date">
+												<br/>
+												<span class="myshp_checkout_customerdata_field">
+					                        		<span style="myshop-resource:deliverydate"/>: <span style="myshop-value-plugin-postnl_checkout:date"/>
+					                        	</span>
+					                        </span>
                                         </div>
-                                        <div style="myshop-has-plugin:mypacel">
-                                            <p style="myshop-has:mypacel">
-                                                <span style="myshop-value:shipping-myparcel-description" class="myshp_checkout_customerdata_field">
-                                                    extra text
-                                                </span>
-                                            </p>
-                                        </div>
-                                        <p style="myshop-has:shipping-delivery-date">
-                                            <span style="myshop-value:shipping-delivery-description" class="myshp_checkout_customerdata_field">
-                                                extra text
-                                            </span>
-                                        </p>
                                     </td>
                                     <td class="myshp_checkout_customerdata_hspacer">
                                     </td>
@@ -180,12 +190,6 @@
                                         <h3><span style="myshop-resource:email">E-mail</span></h3>
                                         <div class="myshp_checkout_customerdata_row">
                                             <!--<label class="myshp_checkout_customerdata_label"><span style="myshop-value:label">&nbsp;</span></label>--><span class="myshp_checkout_customerdata_field"><span style="myshop-value:customer-field-email">&nbsp;</span></span>
-                                            <span style="myshop-has:myshop-has-value-plugin-postnl_checkout:date">
-												<br/>
-												<span class="myshp_checkout_customerdata_field">
-					                        		<span style="myshop-resource:deliverydate"/>: <span style="myshop-value-plugin-postnl_checkout:date"/>
-					                        	</span>
-					                        </span>
                                         </div>
                                     </td>
                                 </tr>

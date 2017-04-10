@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- Copyright 1999-2005� MijnWinkel B.V. All Rights Reserved - Version 0.1.0 	--><!-- User manual http://www.mijnwinkel.nl/ --><!-- Versie 60101 --><!--
+        Changelog
+        23-01-06 Sem van der Wal
+        Background gebruikt shop-color
+        Kruimelpad gebruikt shop-color
+        Verbetering uitlijning algemeen (breedte v gebruikte tabellen)
+        Verbetering van uitlijning winkelmand inhoud
+        Verbetering uitlijning adressen
+        06-02-06 Sem van der Wal
+        Shop-color verwijzingen verwijderd omdat deze nog niet werken, vervangen door vaste waarden
+        06-03-06 Sem van der Wal
+        Factuur en delivery adres ongekeerd (horizontaal ... factuur rechts)
+        Termen voor factuur en aflever verbeterd ('Factureren aan', 'Afleveradres')
+        -->
+        <meta name="Description" content="Place your website description here" />
+        <meta name="Keywords" content="keyword1, keyword2, keyword3" />
+        <meta name="Robots" content="all" />
+        <meta http-equiv="Expires" content="0" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-control" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta content="author" name="MijnWinkel, Checkout Confirmation Mail Inc VAT, $Revision: 3573 $, $Date: 2010-01-13 00:08:46 -0300 (mié, 13 ene 2010) $">
+        </meta>
+        <title>Approval page Template</title>
+    </head>
+    <body bgcolor="#FFFFFF">
+        <style type="text/css">
+            body {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+            }
+            
+            td {
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 10pt;
+            }
+        </style>
+        <br/>
+        <table align="center" border="0" bgcolor="FFFFFF" cellspacing="0" cellpadding="0" width="90%" style="border-collapse: collapse;">
+            <tr>
+                <td align="left" style="border-bottom: 1px solid #e6e6e8;">
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000" style="font-size: 18px;margin: 20px 0;display: block;">
+                        <b>
+                            <span style="myshop-resource:title.quotation.confirmation">
+                                Bestelbevestiging
+                            </span>
+                        </b>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="99%">
+                        <tr>
+                            <td height="10">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="myshop-resource:start.title1">
+                                    Beste
+                                </span>
+                                <span style="myshop-has:customer-field-billing-gender">
+                                    <span style="myshop-value:customer-field-billing-gender">
+                                        aanhef
+                                    </span>
+                                    &nbsp;
+                                </span>
+                                <span style="myshop-value:customer-field-billing-name">
+                                    naam
+                                </span>
+                                ,
+                                <br/>
+                                <br/>
+                                <span style="myshop-value:company-name">
+                                </span>
+                                &nbsp;
+                                <span style="myshop-resource:start.quotation.confirmation">
+                                    heeft van u de volgende Offerte aanvraag ontvangen met
+                                </span>
+                                &#160;<strong>
+                                    <span style="myshop-resource:ref.quotation">
+                                        bestelnummer
+                                    </span>
+                                    &nbsp;
+                                    <span style="myshop-value:order-number">
+                                    </span>
+                                </strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="10">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr bgcolor="#e6e6e8">
+                                        <td height="1" colspan="6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6" colspan="6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td bgcolor="#f5f5f6" style="font-weight:bold;padding-right:10px;width:80px" align="left" nowrap="nowrap">
+                                            <span style="myshop-resource:table.article">
+                                                Artikel
+                                            </span>
+                                        </td>
+                                        <td bgcolor="#f5f5f6" style="font-weight:bold;padding-right:10px;" colspan="2">
+                                            <span style="myshop-resource:table.description">
+                                                Omschrijving
+                                            </span>
+                                        </td>
+                                        <td bgcolor="#f5f5f6" style="font-weight:bold;padding-right:10px;width:80px" align="left" nowrap="nowrap">
+                                            <span style="myshop-resource:table.quantity">
+                                                Aantal
+                                            </span>
+                                        </td>
+                                        <td width="10" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6" colspan="6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="1" colspan="6" bgcolor="#e6e6e8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="9" colspan="6" bgcolor="#ffffff">
+                                        </td>
+                                    </tr>
+                                    <tr style="myshop-repeat:basket;" bgcolor="#ffffff">
+                                        <td width="10">
+                                        </td>
+                                        <td valign="top" style="padding-right:10px;width:80px">
+                                            <span style="myshop-value:product-id;">
+                                                111
+                                            </span>
+                                        </td>
+                                        <td valign="top" style="padding-right:10px;" colspan="2">
+                                            <span style="myshop-value:description;">
+                                                Description
+                                            </span>
+                                        </td>
+                                        <td valign="top" nowrap="nowrap" style="padding-right:10px;width:80px">
+                                            <span style="myshop-value:quantity;">
+                                                3
+                                            </span>
+                                        </td>
+                                        <td width="10">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="9" colspan="6" bgcolor="#ffffff">
+                                        </td>
+                                    </tr>
+                                    <tr bgcolor="#e6e6e8">
+                                        <td height="1" colspan="6">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span style="myshop-not-has:remarks">
+                                    <span style="myshop-resource:enclosure.order">
+                                        Bedankt voor het plaatsen van uw Offerte aanvraag. De Offerte aanvraag zal zo snel mogelijk worden verwerkt
+                                    </span>
+                                </span>
+                                <span style="myshop-value:remarks">
+                                    Remarks
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left">
+                                <table width="100%" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left" bgcolor="#f5f5f6" style="padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:address.delivery">
+                                                    Afleveradres
+                                                </span>
+                                            </b>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td align="left" bgcolor="#f5f5f6" style="padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:address.invoice">
+                                                    Factureren aan
+                                                </span>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" valign="top" bgcolor="#f5f5f6" style="padding:0 5px;">
+                                            <span style="myshop-repeat:customer-fields-exclude(email,remark);display:inline;">
+                                                <span style="myshop-is:on-same-line">
+                                                    <span style="myshop-has:label">
+                                                        <span style="myshop-value:label">
+                                                            &nbsp;
+                                                        </span>
+                                                        &nbsp;
+                                                    </span>
+                                                    <span style="myshop-has:value">
+                                                        <span style="myshop-value:value">
+                                                            &nbsp;
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                                <span style="myshop-not-is:on-same-line">
+                                                    <div style="height:0;clear:both;width:100%;visibility:hidden;">
+                                                        &nbsp;
+                                                    </div>
+                                                    <span>
+                                                        <span style="myshop-has:label">
+                                                            <span style="myshop-value:label">
+                                                                &nbsp;
+                                                            </span>
+                                                            &nbsp;
+                                                        </span>
+                                                        <span style="myshop-has:value">
+                                                            <span style="myshop-value:value">
+                                                                &nbsp;
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%" bgcolor="#f5f5f6" style="padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:shippingmethod.capital">
+                                                    Verzendmethode
+                                                </span>
+                                            </b>
+                                        </td>
+                                        <td width="10">
+                                        </td>
+                                        <td bgcolor="#f5f5f6" style="padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:email">
+                                                    E-mail
+                                                </span>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" bgcolor="#f5f5f6" style="padding:0 5px;">
+                                            <span style="myshop-value:shipping">
+                                                &nbsp;
+                                            </span>
+                                            <span style="myshop-has:myshop-has-value-plugin-postnl_checkout:date">
+												<br/>
+					                        	<span style="myshop-resource:deliverydate"/>: <span style="myshop-value-plugin-postnl_checkout:date"/>
+					                        </span>
+                                            <span style="myshop-has:shipping-confirmation-description">
+                                                <br/>
+                                                <span style="myshop-value:shipping-confirmation-description">
+                                                    extra text
+                                                </span>
+                                            </span>                             
+                                            <div style="myshop-has-plugin:mypacel">
+                                                <p style="myshop-has:mypacel">
+                                                    <span style="myshop-value:shipping-myparcel-description" class="myshp_checkout_customerdata_field">
+                                                        extra text
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <p style="myshop-has:shipping-delivery-date">
+                                                <span style="myshop-value:shipping-delivery-description" class="myshp_checkout_customerdata_field">
+                                                    extra text
+                                                </span>
+                                            </p>
+                                        </td>
+                                        <td width="10">
+                                        </td>
+                                        <td valign="top" bgcolor="#f5f5f6" style="padding:0 5px;">
+                                            <span style="myshop-value:customer-field-email">
+                                                &nbsp;
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="10">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="50%" bgcolor="#f5f5f6" style="padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:paymethod">
+                                                    Betaalmethode
+                                                </span>
+                                            </b>
+                                        </td>
+                                        <td width="10">
+                                        </td>
+                                        <td bgcolor="#f5f5f6" style="myshop-has-value:customer-field-remark; padding:0 5px;" valign="top">
+                                            <b>
+                                                <span style="myshop-resource:remark">
+                                                    Opmerking
+                                                </span>
+                                            </b>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" bgcolor="#f5f5f6" style="padding:0 5px;">
+                                            <span style="myshop-not-has:payment-confirmation-description">
+                                                <span style="myshop-value:payment-method">
+                                                    &nbsp;
+                                                </span>
+                                            </span>
+                                            <span style="myshop-has:payment-confirmation-description">
+                                                <span style="myshop-value:payment-confirmation-description">
+                                                    extra text
+                                                </span>
+                                            </span>
+                                        </td>
+                                        <td width="10">
+                                        </td>
+                                        <td valign="top" bgcolor="#f5f5f6" style="myshop-has-value:customer-field-remark; padding:0 5px;">
+                                            <span style="myshop-value:customer-field-remark">
+                                                &nbsp;
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                        <td height="5">
+                                        </td>
+                                        <td height="5" bgcolor="#f5f5f6">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15">
+                                <table cellpadding="0" cellspacing="0" align="center" width="100%" border="0">
+                                    <tr bgcolor="#e6e6e8">
+                                        <td height="1">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding:0 5px;">
+                                            <b>
+                                                <span style="myshop-value:company-name">
+                                                    &nbsp;
+                                                </span>
+                                            </b>
+                                            <br/>
+                                            <span style="myshop-value:company-address">
+                                            </span>
+                                            <br/>
+                                            <span style="myshop-value:company-zip">
+                                            </span>
+                                            &nbsp;
+                                            <span style="myshop-value:company-city">
+                                            </span>
+                                            ,&nbsp;
+                                            <span style="myshop-value:company-country">
+                                            </span>
+                                            <br/>
+                                            <span style="myshop-has:company-phone">
+                                                <span style="myshop-resource:phone">
+                                                    Tel.:
+                                                </span>
+                                                &nbsp;
+                                                <span style="myshop-value:company-phone">
+                                                </span>
+                                            </span>
+                                            <br/>
+                                            <span style="myshop-has:company-fax">
+                                                <span style="myshop-resource:phone.fax">
+                                                    Fax.:
+                                                </span>
+                                                &nbsp;
+                                                <span style="myshop-value:company-fax">
+                                                </span>
+                                            </span>
+                                            <br/>
+                                            <span>
+                                                <span style="myshop-resource:email">
+                                                    E-mail:
+                                                </span>
+                                                &nbsp;
+                                            </span>
+                                            <span style="myshop-value:company-email">
+                                            </span>
+                                            <br/>
+                                            <br/>
+                                            <!--
+                                            <span style="myshop-has:company-coc-number"><span style="myshop-resource:number.coc">KvK nr.</span>:&nbsp;<span style="myshop-value:company-coc-number"></span></span><br/>
+                                            <span style="myshop-has:company-vat-number"><span style="myshop-resource:number.vat">BTW nr.</span>:&nbsp;<span style="myshop-value:company-vat-number"></span></span><br/>-->
+                                            <span style="myshop-resource:number.coc">
+                                                KvK nr.
+                                            </span>
+                                            :&nbsp;
+                                            <span style="myshop-value:company-coc-number">
+                                            </span>
+                                            <br/>
+                                            <span style="myshop-resource:number.vat">
+                                                BTW nr.
+                                            </span>
+                                            :&nbsp;
+                                            <span style="myshop-value:company-vat-number">
+                                            </span>
+                                            <br/>
+                                            <br/>
+                                            <span style="myshop-value:company-website">
+                                            </span>
+                                            <br/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td height="5">
+                                        </td>
+                                    </tr>
+                                    <tr bgcolor="#e6e6e8">
+                                        <td height="1">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="15">
+                            </td>
+                        </tr>
+                        <tr style="myshop-has:terms-conditions">
+                            <td>
+                                <table width="100%" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td>
+                                            <a style="myshop-action:terms-conditions">
+                                                <span style="myshop-resource:terms.delivery">
+                                                    Klik hier voor de leveringsvoorwaarden
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
